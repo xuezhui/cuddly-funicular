@@ -530,7 +530,7 @@ class OrderController extends Controller
                     //规格表里库存释放
                     DB::table('pro_spec')->where('id', $item->spec_id)->increment('stock', $item->pro_num);
                     //产品表里总库存也释放
-                    DB::table('product')->where('id', $item->id)->increment('stock', $item->pro_num);
+                    DB::table('product')->where('id', $item->pro_id)->increment('stock', $item->pro_num);
                 }
             }
             //删掉订单条目

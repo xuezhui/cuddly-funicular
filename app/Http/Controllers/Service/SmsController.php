@@ -51,7 +51,7 @@ class SmsController extends Controller
             if (!$result->success && $result->statusCode == 400) {
                 return M3Result::init(ErrorCode::$USER_SMS_TEL_TOO_MORE, '', $result->responseData['detail']);
             }
-            Log::warning($result->responseData);
+            Log::error($result->responseData);
             return M3Result::init(ErrorCode::$SEND_SMS_ERROR);
         }
     }

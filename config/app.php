@@ -105,7 +105,7 @@ return [
     //加密推荐人salt字符串
     'referral_token' => '3cfb6c48-1a8d-11e7-b615-1c1b0d88adac',
     //前端推荐人注册页面url
-    'fe_url' => 'http://web.zhiheind.com/register?',
+    'fe_url' => 'http://web.xxx.com/register?',
     //收款二维码salt字符串
     'receipt_token'=>'8a8b0002-2340-11e7-b671-2c4d54f1335a',
     //前端收款页面url
